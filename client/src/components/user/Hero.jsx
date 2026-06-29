@@ -1,4 +1,5 @@
 import { assets } from "../../assets/assets";
+import { COMPANIES } from "../../constants/data";
 
 const Hero = () => {
     return (
@@ -13,7 +14,7 @@ const Hero = () => {
 
                         <input type="text" placeholder="Search for jobs..." className="max-sm:text-xs p-2 rounded outline-none w-full" />
                     </div>
-                    
+
                     <div className="flex items-center">
                         <img src={assets.location_icon} className="h-4 sm:h-5" alt="location_icon" />
 
@@ -21,6 +22,16 @@ const Hero = () => {
                     </div>
 
                     <button className="bg-blue-600 px-6 py-2 rounded text-white m-1">Search</button>
+                </div>
+            </div>
+
+            <div className="border border-gray-300 shadow mx-2 mt-5 p-6 rounded-md flex">
+                <div className="flex justify-center gap-10 lg:gap-16 flex-wrap">
+                    <p className="font-medium">Trusted by</p>
+
+                    {COMPANIES.map(({ label, image }) => (
+                        <img key={label} src={image} alt={label} className="h-6" />
+                    ))}
                 </div>
             </div>
         </div>
