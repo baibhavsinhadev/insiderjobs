@@ -1,7 +1,24 @@
+import { useRef } from "react";
 import { assets } from "../../assets/assets";
 import { COMPANIES } from "../../constants/data";
+import { useAppContext } from "../../context/AppContext";
 
 const Hero = () => {
+
+    const { setSearchFilter, setIsSearched } = useAppContext();
+
+    const titleRef = useRef(null);
+    const locationRef = useRef(null);
+
+    const handleSearch = () => {
+        setSearchFilter({
+            title: titleRef.current.value,
+            location: locationRef.current.value
+        });
+
+        setIsSearched(true);
+    };
+
     return (
         <div className="container 2xl:px-20 mx-auto my-10">
             <div className="bg-linear-to-r from-purple-800 to-purple-950 text-white py-16 text-center mx-2 rounded-xl">
@@ -12,16 +29,16 @@ const Hero = () => {
                     <div className="flex items-center">
                         <img className="h-4 sm:h-5" src={assets.search_icon} alt="search_icon" />
 
-                        <input type="text" placeholder="Search for jobs..." className="max-sm:text-xs p-2 rounded outline-none w-full" />
+                        <input type="text" placeholder="Search for jobs..." className="max-sm:text-xs p-2 rounded outline-none w-full" ref={titleRef} />
                     </div>
 
                     <div className="flex items-center">
                         <img src={assets.location_icon} className="h-4 sm:h-5" alt="location_icon" />
 
-                        <input type="text" placeholder="Location" className="max-sm:text-xs p-2 rounded outline-none w-full" />
+                        <input type="text" placeholder="Location" className="max-sm:text-xs p-2 rounded outline-none w-full" ref={locationRef} />
                     </div>
 
-                    <button className="bg-blue-600 px-6 py-2 rounded text-white m-1">Search</button>
+                    <button onClick={handleSearch} className="bg-blue-600 px-6 py-2 rounded text-white m-1">Search</button>
                 </div>
             </div>
 
