@@ -5,3 +5,7 @@
     font-family: "Outfit", sans-serif;
     scrollbar-width: none;
 }
+
+button {
+    @apply cursor-pointer hover:scale-105 active:scale-95 transition-all
+}
