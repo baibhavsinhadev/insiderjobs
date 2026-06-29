@@ -21,7 +21,7 @@ const Navbar = () => {
                         <Link to="/applications">Applied Jobs</Link>
 
                         <p>|</p>
-                        <p>Hi, {(user.firstName + " " + user.lastName) || "User"}</p>
+                        <p className="max-sm:hidden">Hi, {(user.firstName + " " + user.lastName) || "User"}</p>
                         
                         <UserButton />
                     </div>
