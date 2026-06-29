@@ -1,8 +1,9 @@
+import UserRoutes from "./routes/UserRoutes";
 
 const App = () => {
     return (
         <div>
-            App Component
+            <UserRoutes />
         </div>
     );
 };
