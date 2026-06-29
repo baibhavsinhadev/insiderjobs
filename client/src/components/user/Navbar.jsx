@@ -10,7 +10,7 @@ const Navbar = () => {
 
     return (
         <div className="shadow py-4">
-            <div className="px-4 xl:px-20 mx-auto flex justify-between items-center">
+            <div className="container px-4 2xl:px-20 mx-auto flex justify-between items-center">
                 <Link to="/">
                     <img src={assets.logo} alt="logo" />
                 </Link>
