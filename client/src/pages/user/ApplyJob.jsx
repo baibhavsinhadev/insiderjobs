@@ -95,8 +95,20 @@ const ApplyJob = () => {
                             <button className="bg-blue-600 p-2.5 px-10 text-white rounded">
                                 Apply Now
                             </button>
-                            
+
                             <p className="mt-1 text-gray-600">Posted {formatTimeAgo(jobData.createdAt)}</p>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col lg:flex-row justify-between items-start">
+                        <div className="w-full lg:w-2/3">
+                            <h2 className="font-bold text-2xl mb-4">Job description</h2>
+                            
+                            <div className="rich-text" dangerouslySetInnerHTML={{ __html: jobData.description }} />
+
+                            <button className="bg-blue-600 p-2.5 px-10 text-white rounded mt-10">
+                                Apply Now
+                            </button>
                         </div>
                     </div>
                 </div>
