@@ -9,6 +9,12 @@ export const COMPANIES = [
     { label: "Adobe", image: assets.adobe_logo }
 ];
 
+export const SOCIAL_LINKS = [
+    { label: "Facebook", image: assets.facebook_icon },
+    { label: "Twitter", image: assets.twitter_icon },
+    { label: "Instagram", image: assets.instagram_icon }
+]
+
 export const JOB_CATEGORIES = [
     "Programming",
     "Data Science",
@@ -16,7 +22,7 @@ export const JOB_CATEGORIES = [
     "Networking",
     "Management",
     "Marketing",
-    "Cybersecurity",
+    "Cybersecurity"
 ];
 
 export const JOB_LOCATIONS = [
