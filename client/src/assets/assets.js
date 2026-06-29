@@ -7,6 +7,7 @@ import accenture_logo from "./accenture_logo.png";
 import profile_img from "./profile_img.png";
 import app_main_img from "./app_main_img.png";
 import cross_icon from './cross_icon.svg';
+import question_mark from './question_mark.svg';
 import location_icon from './location_icon.svg';
 import money_icon from './money_icon.svg';
 import suitcase_icon from './suitcase_icon.svg';
@@ -60,6 +61,7 @@ export const assets = {
     twitter_icon,
     home_icon,
     add_icon,
+    question_mark,
     person_tick_icon,
     resume_download_icon,
     profile_img,
@@ -74,10 +76,10 @@ export const assets = {
 
 // Sample data for Manage Jobs Page
 export const manageJobsData = [
-    { _id: 1, title: "Full Stack Developer", date: 1729102298497, location: "Bangalore", applicants: 20 },
-    { _id: 2, title: "Data Scientist", date: 1729102298497, location: "San Francisco", applicants: 15 },
-    { _id: 3, title: "Marketing Manager", date: 1729102298497, location: "London", applicants: 2 },
-    { _id: 4, title: "UI/UX Designer", date: 1729102298497, location: "Dubai", applicants: 25 }
+    { _id: 1, title: "Full Stack Developer", createdAt: 1729102298497, location: "Bangalore", applicants: 20 },
+    { _id: 2, title: "Data Scientist", createdAt: 1729102298497, location: "San Francisco", applicants: 15 },
+    { _id: 3, title: "Marketing Manager", createdAt: 1729102298497, location: "London", applicants: 2 },
+    { _id: 4, title: "UI/UX Designer", createdAt: 1729102298497, location: "Dubai", applicants: 25 }
 ];
 
 // Sample data for Profile Page
@@ -86,7 +88,7 @@ export const jobsApplied = [
         company: 'Amazon',
         title: 'Full Stack Developer',
         location: 'Bangalore',
-        date: '22 Aug, 2024',
+        createdAt: '22 Aug, 2024',
         status: 'Pending',
         logo: company_icon,
     },
@@ -94,7 +96,7 @@ export const jobsApplied = [
         company: 'Meta',
         title: 'Data Scientist',
         location: 'San Francisco',
-        date: '22 Aug, 2024',
+        createdAt: '22 Aug, 2024',
         status: 'Rejected',
         logo: company_icon,
     },
@@ -102,7 +104,7 @@ export const jobsApplied = [
         company: 'Google',
         title: 'Marketing Manager',
         location: 'London',
-        date: '25 Sep, 2024',
+        createdAt: '25 Sep, 2024',
         status: 'Accepted',
         logo: company_icon,
     },
@@ -110,7 +112,7 @@ export const jobsApplied = [
         company: 'Qualcomm',
         title: 'UI/UX Designer',
         location: 'Dubai',
-        date: '15 Oct, 2024',
+        createdAt: '15 Oct, 2024',
         status: 'Pending',
         logo: company_icon,
     },
@@ -118,7 +120,7 @@ export const jobsApplied = [
         company: 'Microsoft',
         title: 'Full Stack Developer',
         location: 'Hyderabad',
-        date: '25 Sep, 2024',
+        createdAt: '25 Sep, 2024',
         status: 'Accepted',
         logo: company_icon,
     },
@@ -142,8 +144,8 @@ export const jobsData = [
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -165,7 +167,7 @@ export const jobsData = [
             <li>Ability to work in an Agile environment.</li>
         </ol>`,
         salary: 82000,
-        date: 1729681667114,
+        createdAt: 1729681667114,
         category: "Programming",
     },
     {
@@ -175,8 +177,8 @@ export const jobsData = [
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -198,7 +200,7 @@ export const jobsData = [
             <li>Excellent problem-solving and critical-thinking skills.</li>
         </ol>`,
         salary: 72000,
-        date: 1729681667114,
+        createdAt: 1729681667114,
         category: "Data Science",
     },
     {
@@ -208,8 +210,8 @@ export const jobsData = [
         level: "Beginner Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -231,7 +233,7 @@ export const jobsData = [
             <li>Creative problem-solving abilities.</li>
         </ol>`,
         salary: 61000,
-        date: 1729681667114,
+        createdAt: 1729681667114,
         category: "Designing",
     },
     {
@@ -241,8 +243,8 @@ export const jobsData = [
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -264,7 +266,7 @@ export const jobsData = [
             <li>Excellent troubleshooting and analytical skills.</li>
         </ol>`,
         salary: 53000,
-        date: 1729681667114,
+        createdAt: 1729681667114,
         category: "Programming",
     },
     {
@@ -274,8 +276,8 @@ export const jobsData = [
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -297,7 +299,7 @@ export const jobsData = [
             <li>Excellent communication and teamwork abilities.</li>
         </ol>`,
         salary: 91000,
-        date: 1729681667114,
+        createdAt: 1729681667114,
         category: "Programming",
     },
     {
@@ -307,8 +309,8 @@ export const jobsData = [
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -330,7 +332,7 @@ export const jobsData = [
             <li>Relevant certifications (e.g., CCNA, CCNP) are a plus.</li>
         </ol>`,
         salary: 77000,
-        date: 1729681667114,
+        createdAt: 1729681667114,
         category: "Networking",
     },
     {
@@ -340,8 +342,8 @@ export const jobsData = [
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -363,7 +365,7 @@ export const jobsData = [
             <li>Certification in project management (e.g., PMP, Scrum Master) is preferred.</li>
         </ol>`,
         salary: 60000,
-        date: 1729681667114,
+        createdAt: 1729681667114,
         category: "Management",
     },
     {
@@ -373,8 +375,8 @@ export const jobsData = [
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -396,7 +398,7 @@ export const jobsData = [
             <li>Familiarity with version control systems (e.g., Git).</li>
         </ol>`,
         salary: 112000,
-        date: 1729681667114,
+        createdAt: 1729681667114,
         category: "Programming",
     },
     {
@@ -406,8 +408,8 @@ export const jobsData = [
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -429,7 +431,7 @@ export const jobsData = [
             <li>Relevant certifications (e.g., AWS Certified Solutions Architect) are preferred.</li>
         </ol>`,
         salary: 96000,
-        date: 1729681667114,
+        createdAt: 1729681667114,
         category: "Programming",
     },
     {
@@ -439,8 +441,8 @@ export const jobsData = [
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -462,7 +464,7 @@ export const jobsData = [
             <li>Attention to detail and a commitment to quality.</li>
         </ol>`,
         salary: 72000,
-        date: 1729681667114,
+        createdAt: 1729681667114,
         category: "Marketing",
     },
     {
@@ -472,8 +474,8 @@ export const jobsData = [
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -495,7 +497,7 @@ export const jobsData = [
             <li>Relevant certifications (e.g., CISSP, CEH) are a plus.</li>
         </ol>`,
         salary: 62000,
-        date: 1729681667114,
+        createdAt: 1729681667114,
         category: "Cybersecurity",
     },
     {
@@ -505,8 +507,8 @@ export const jobsData = [
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -528,7 +530,7 @@ export const jobsData = [
             <li>Familiarity with Agile methodologies is a plus.</li>
         </ol>`,
         salary: 68000,
-        date: 1729681667114,
+        createdAt: 1729681667114,
         category: "Management",
     },
     {
@@ -538,8 +540,8 @@ export const jobsData = [
         level: "Beginner Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -561,7 +563,7 @@ export const jobsData = [
             <li>Willingness to learn and adapt in a fast-paced environment.</li>
         </ol>`,
         salary: 77000,
-        date: 1729681667114,
+        createdAt: 1729681667114,
         category: "Marketing",
     },
     {
@@ -571,8 +573,8 @@ export const jobsData = [
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -594,7 +596,7 @@ export const jobsData = [
             <li>Ability to communicate complex concepts to non-technical audiences.</li>
         </ol>`,
         salary: 65000,
-        date: 1729681667114,
+        createdAt: 1729681667114,
         category: "Data Science",
     },
     {
@@ -604,8 +606,8 @@ export const jobsData = [
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -627,7 +629,7 @@ export const jobsData = [
             <li>A portfolio showcasing relevant design projects is required.</li>
         </ol>`,
         salary: 64000,
-        date: 1729681667114,
+        createdAt: 1729681667114,
         category: "Design",
     },
     {
@@ -637,8 +639,8 @@ export const jobsData = [
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -660,7 +662,7 @@ export const jobsData = [
             <li>Relevant certifications (e.g., AWS Certified DevOps Engineer) are a plus.</li>
         </ol>`,
         salary: 74000,
-        date: 1729681667114,
+        createdAt: 1729681667114,
         category: "Programming",
     },
     {
@@ -670,8 +672,8 @@ export const jobsData = [
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -693,7 +695,7 @@ export const jobsData = [
             <li>A results-oriented mindset with a focus on meeting targets.</li>
         </ol>`,
         salary: 59000,
-        date: 1729681667114,
+        createdAt: 1729681667114,
         category: "Marketing",
     },
     {
@@ -703,8 +705,8 @@ export const jobsData = [
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -726,7 +728,7 @@ export const jobsData = [
             <li>Attention to detail and strong organizational skills.</li>
         </ol>`,
         salary: 89000,
-        date: 1729681667114,
+        createdAt: 1729681667114,
         category: "Management",
     },
     {
@@ -736,8 +738,8 @@ export const jobsData = [
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -759,7 +761,7 @@ export const jobsData = [
             <li>Strong leadership and project management skills.</li>
         </ol>`,
         salary: 99000,
-        date: 1729681667114,
+        createdAt: 1729681667114,
         category: "Marketing",
     },
     {
@@ -769,8 +771,8 @@ export const jobsData = [
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -792,7 +794,7 @@ export const jobsData = [
             <li>A portfolio showcasing relevant design work is required.</li>
         </ol>`,
         salary: 91000,
-        date: 1729681667114,
+        createdAt: 1729681667114,
         category: "Design",
     },
     {
@@ -802,8 +804,8 @@ export const jobsData = [
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -825,7 +827,7 @@ export const jobsData = [
             <li>Good communication skills to articulate testing outcomes and challenges.</li>
         </ol>`,
         salary: 123000,
-        date: 1729681667114,
+        createdAt: 1729681667114,
         category: "Programming",
     },
     {
@@ -835,8 +837,8 @@ export const jobsData = [
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -858,7 +860,7 @@ export const jobsData = [
             <li>Strong communication skills to work with technical and non-technical teams.</li>
         </ol>`,
         salary: 87000,
-        date: 1729681667114,
+        createdAt: 1729681667114,
         category: "Cybersecurity",
     },
     {
@@ -868,8 +870,8 @@ export const jobsData = [
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -891,7 +893,7 @@ export const jobsData = [
             <li>Good problem-solving skills and attention to detail.</li>
         </ol>`,
         salary: 102000,
-        date: 1729681667114,
+        createdAt: 1729681667114,
         category: "Programming",
     }
 ];
