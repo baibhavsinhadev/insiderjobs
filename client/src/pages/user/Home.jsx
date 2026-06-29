@@ -1,10 +1,11 @@
-import { Hero, Navbar } from "../../components/components";
+import { Hero, JobListings, Navbar } from "../../components/components";
 
 const Home = () => {
     return (
         <div>
             <Navbar />
             <Hero />
+            <JobListings />
         </div>
     );
 };

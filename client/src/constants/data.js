@@ -8,3 +8,23 @@ export const COMPANIES = [
     { label: "Amazon", image: assets.amazon_logo },
     { label: "Adobe", image: assets.adobe_logo }
 ];
+
+export const JOB_CATEGORIES = [
+    "Programming",
+    "Data Science",
+    "Designing",
+    "Networking",
+    "Management",
+    "Marketing",
+    "Cybersecurity",
+];
+
+export const JOB_LOCATIONS = [
+    "Bangalore",
+    "Washington",
+    "Hyderabad",
+    "Mumbai",
+    "California",
+    "Chennai",
+    "New York"
+];
