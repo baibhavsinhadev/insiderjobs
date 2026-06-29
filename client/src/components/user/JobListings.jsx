@@ -1,10 +1,11 @@
 import { assets } from "../../assets/assets";
 import { JOB_CATEGORIES, JOB_LOCATIONS } from "../../constants/data";
 import { useAppContext } from "../../context/AppContext";
+import JobCard from "./JobCard";
 
 const JobListings = () => {
 
-    const { searchFilter, isSearched, setSearchFilter } = useAppContext();
+    const { searchFilter, isSearched, setSearchFilter, jobs } = useAppContext();
 
     return (
         <div className="container 2xl:px-20 mx-auto flex flex-col lg:flex-row max-lg:space-y-8 py-8">
@@ -71,7 +72,7 @@ const JobListings = () => {
                         ))}
                     </ul>
                 </div>
-                
+
                 <div className="max-lg:hidden">
                     <h4 className="font-medium text-lg py-4">Search by Location</h4>
 
@@ -85,6 +86,17 @@ const JobListings = () => {
                     </ul>
                 </div>
             </div>
+
+            <section className="w-full lg:w-3/4 text-gray-800 max-lg:px-4">
+                <h3 className="font-medium text-3xl py-2">Latest jobs</h3>
+                <p className="mb-8">Get your desired job from top companies</p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
+                    {jobs.map((job) => (
+                        <JobCard key={job._id} job={job} />
+                    ))}
+                </div>
+            </section>
         </div>
     );
 };
