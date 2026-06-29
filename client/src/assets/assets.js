@@ -144,8 +144,8 @@ export const jobsData = [
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -177,8 +177,8 @@ export const jobsData = [
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -210,8 +210,8 @@ export const jobsData = [
         level: "Beginner Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -243,8 +243,8 @@ export const jobsData = [
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -276,8 +276,8 @@ export const jobsData = [
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -309,8 +309,8 @@ export const jobsData = [
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -342,8 +342,8 @@ export const jobsData = [
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -375,8 +375,8 @@ export const jobsData = [
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -408,8 +408,8 @@ export const jobsData = [
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -441,8 +441,8 @@ export const jobsData = [
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -474,8 +474,8 @@ export const jobsData = [
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -507,8 +507,8 @@ export const jobsData = [
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -540,8 +540,8 @@ export const jobsData = [
         level: "Beginner Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -573,8 +573,8 @@ export const jobsData = [
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -606,8 +606,8 @@ export const jobsData = [
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -639,8 +639,8 @@ export const jobsData = [
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -672,8 +672,8 @@ export const jobsData = [
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -705,8 +705,8 @@ export const jobsData = [
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -738,8 +738,8 @@ export const jobsData = [
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -771,8 +771,8 @@ export const jobsData = [
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -804,8 +804,8 @@ export const jobsData = [
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -837,8 +837,8 @@ export const jobsData = [
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
@@ -870,8 +870,8 @@ export const jobsData = [
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Google",
+            "email": "google@demo.com",
             "image": company_icon,
         },
         description: `
