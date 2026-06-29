@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { assets } from "../../assets/assets";
 import { JOB_CATEGORIES, JOB_LOCATIONS } from "../../constants/data";
 import { useAppContext } from "../../context/AppContext";
@@ -6,6 +7,52 @@ import JobCard from "./JobCard";
 const JobListings = () => {
 
     const { searchFilter, isSearched, setSearchFilter, jobs } = useAppContext();
+
+    const [showFilter, setShowFilter] = useState(false);
+    const [selectedCategories, setSelectedCategories] = useState([]);
+    const [selectedLocations, setSelectedLocations] = useState([]);
+
+    const toggleCategory = (category) => {
+        setSelectedCategories((prev) =>
+            prev.includes(category)
+                ? prev.filter((item) => item !== category)
+                : [...prev, category]
+        );
+    };
+
+    const toggleLocation = (location) => {
+        setSelectedLocations((prev) =>
+            prev.includes(location)
+                ? prev.filter((item) => item !== location)
+                : [...prev, location]
+        );
+    };
+
+    const clearFilters = () => {
+        setSelectedCategories([]);
+        setSelectedLocations([]);
+        setSearchFilter({
+            title: "",
+            location: "",
+        });
+    };
+
+    const filteredJobs = jobs.filter((job) => {
+        const matchesTitle = !searchFilter.title || job.title.toLowerCase().includes(searchFilter.title.toLowerCase());
+
+        const matchesSearchLocation = !searchFilter.location || job.location.toLowerCase() === searchFilter.location.toLowerCase();
+
+        const matchesCategory = selectedCategories.length === 0 || selectedCategories.includes(job.category);
+
+        const matchesLocation = selectedLocations.length === 0 || selectedLocations.includes(job.location);
+
+        return (
+            matchesTitle &&
+            matchesSearchLocation &&
+            matchesCategory &&
+            matchesLocation
+        );
+    });
 
     return (
         <div className="container 2xl:px-20 mx-auto flex flex-col lg:flex-row max-lg:space-y-8 py-8">
@@ -60,13 +107,22 @@ const JobListings = () => {
                     )
                 }
 
+                <button onClick={() => setShowFilter(!showFilter)} className="px-6 py-1.5 rounded border border-gray-400 lg:hidden">
+                    {showFilter ? "Close" : "Filters"}
+                </button>
+
                 <div className="max-lg:hidden">
                     <h4 className="font-medium text-lg py-4">Search by Categories</h4>
 
                     <ul className="space-y-4 text-gray-600">
                         {JOB_CATEGORIES.map((category) => (
                             <li key={category} className="flex gap-3 items-center">
-                                <input type="checkbox" />
+                                <input
+                                    type="checkbox"
+                                    checked={selectedCategories.includes(category)}
+                                    onChange={() => toggleCategory(category)}
+                                />
+
                                 <span>{category}</span>
                             </li>
                         ))}
@@ -79,7 +135,12 @@ const JobListings = () => {
                     <ul className="space-y-4 text-gray-600">
                         {JOB_LOCATIONS.map((location) => (
                             <li key={location} className="flex gap-3 items-center">
-                                <input type="checkbox" />
+                                <input
+                                    type="checkbox"
+                                    checked={selectedLocations.includes(location)}
+                                    onChange={() => toggleLocation(location)}
+                                />
+
                                 <span>{location}</span>
                             </li>
                         ))}
@@ -92,9 +153,29 @@ const JobListings = () => {
                 <p className="mb-8">Get your desired job from top companies</p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
-                    {jobs.map((job) => (
-                        <JobCard key={job._id} job={job} />
-                    ))}
+                    {filteredJobs.length > 0 ? (
+                        filteredJobs.map((job) => (
+                            <JobCard key={job._id} job={job} />
+                        ))
+                    ) : (
+                        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
+                            {filteredJobs.length > 0 ? (
+                                filteredJobs.map((job) => (
+                                    <JobCard key={job._id} job={job} />
+                                ))
+                            ) : (
+                                <div className="col-span-full flex flex-col items-center justify-center py-16 px-6 text-center border border-gray-200 rounded-xl bg-gray-50">
+                                    <img src={assets.search_icon} alt="No jobs" className="w-14 h-14 opacity-50 mb-4" />
+
+                                    <h3 className="text-xl font-semibold text-gray-800">No Jobs Found</h3>
+
+                                    <p className="mt-2 text-gray-500 max-w-md">We couldn't find any jobs matching your current filters. Try changing the category, location, or search keywords.</p>
+
+                                    <button onClick={clearFilters} className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg">Clear Filters</button>
+                                </div>
+                            )}
+                        </div>
+                    )}
                 </div>
             </section>
         </div>
