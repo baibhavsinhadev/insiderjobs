@@ -1,5 +1,5 @@
 import { useClerk } from "@clerk/react";
-import { createContext, useContext } from "react";
+import { createContext, useContext, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const AppContext = createContext();
@@ -11,8 +11,15 @@ export const AppProvider = ({ children }) => {
 
     const { user } = useClerk();
 
+    const [isSearched, setIsSearched] = useState(false);
+    const [searchFilter, setSearchFilter] = useState({
+        title: "",
+        location: ""
+    });
+
     const value = {
-        user, navigate, location
+        user, navigate, location, searchFilter, setSearchFilter,
+        isSearched, setIsSearched
     };
 
     return (
